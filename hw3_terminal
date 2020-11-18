@@ -1,0 +1,205 @@
+Last login: Mon Nov 16 13:16:33 on console
+ss-iMac:~ s$ git clone https://github.com/FG123Z/homepage
+Cloning into 'homepage'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+ss-iMac:~ s$ ls
+Applications		Library			Public
+Desktop			Movies			homepage
+Documents		Music			my_testing_git_repo
+Downloads		Pictures		zfolder
+ss-iMac:~ s$ cd homepage
+ss-iMac:homepage s$ ls
+README.md
+ss-iMac:homepage s$ git remote -v
+origin	https://github.com/FG123Z/homepage (fetch)
+origin	https://github.com/FG123Z/homepage (push)
+ss-iMac:homepage s$ ls
+LICENSE			css			package-lock.json
+README.md		formpage.html		package.json
+blog.html		gulpfile.js		projects.html
+circle-cropped (4).png	html-email-contact-form	vendor
+contact.html		index.html
+ss-iMac:homepage s$ git add -A
+ss-iMac:homepage s$ git commit -m 'adding new hw1 files that will go up to github'
+[main e2a470d] adding new hw1 files that will go up to github
+ 100 files changed, 66729 insertions(+), 1 deletion(-)
+ create mode 100755 LICENSE
+ rewrite README.md (100%)
+ mode change 100644 => 100755
+ create mode 100755 blog.html
+ create mode 100755 circle-cropped (4).png
+ create mode 100755 contact.html
+ create mode 100755 css/small-business.css
+ create mode 100755 formpage.html
+ create mode 100755 gulpfile.js
+ create mode 100755 html-email-contact-form/LICENSE
+ create mode 100755 html-email-contact-form/form.css
+ create mode 100755 html-email-contact-form/form.js
+ create mode 100755 html-email-contact-form/handler.php
+ create mode 100755 html-email-contact-form/readme.html
+ create mode 100755 html-email-contact-form/src/FormHandler.php
+ create mode 100755 html-email-contact-form/src/ReCaptchaValidator.php
+ create mode 100755 html-email-contact-form/src/index.php
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/LICENSE
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/README.md
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/composer.json
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/phpunit.xml
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/src/FieldValidator.php
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/src/FieldValidatorCollection.php
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/src/FormValidator.php
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/src/ValidatorMap.php
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/src/Validators.php
+ create mode 100755 html-email-contact-form/vendor/FormGuide/PHPFormValidator/src/ValidatorsList.php
+ create mode 100755 html-email-contact-form/vendor/autoload.php
+ create mode 100755 html-email-contact-form/vendor/composer/ClassLoader.php
+ create mode 100755 html-email-contact-form/vendor/composer/LICENSE
+ create mode 100755 html-email-contact-form/vendor/composer/autoload_classmap.php
+ create mode 100755 html-email-contact-form/vendor/composer/autoload_namespaces.php
+ create mode 100755 html-email-contact-form/vendor/composer/autoload_psr4.php
+ create mode 100755 html-email-contact-form/vendor/composer/autoload_real.php
+ create mode 100755 html-email-contact-form/vendor/composer/autoload_static.php
+ create mode 100755 html-email-contact-form/vendor/composer/installed.json
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/CaptchaBuilder.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/CaptchaBuilderInterface.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/Font/captcha0.ttf
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/Font/captcha1.ttf
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/Font/captcha2.ttf
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/Font/captcha3.ttf
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/Font/captcha4.ttf
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/Font/captcha5.ttf
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/ImageFileHandler.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/LICENSE
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/PhraseBuilder.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/PhraseBuilderInterface.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/README.md
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/autoload.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/composer.json
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/demo/demo.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/demo/fingerprint.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/demo/index.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/demo/ocr.php
+ create mode 100755 html-email-contact-form/vendor/gregwar/captcha/demo/output.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/LICENSE
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/PHPMailerAutoload.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/VERSION
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/class.phpmailer.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/class.phpmaileroauth.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/class.phpmaileroauthgoogle.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/class.pop3.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/class.smtp.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/composer.json
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/composer.lock
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/extras/EasyPeasyICS.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/extras/README.md
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/extras/htmlfilter.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/extras/ntlm_sasl_client.php
+ create mode 100755 html-email-contact-form/vendor/phpmailer/phpmailer/get_oauth_token.php
+ create mode 100755 index.html
+ create mode 100755 package-lock.json
+ create mode 100755 package.json
+ create mode 100755 projects.html
+ create mode 100755 vendor/bootstrap/css/bootstrap-grid.css
+ create mode 100755 vendor/bootstrap/css/bootstrap-grid.css.map
+ create mode 100755 vendor/bootstrap/css/bootstrap-grid.min.css
+ create mode 100755 vendor/bootstrap/css/bootstrap-grid.min.css.map
+ create mode 100755 vendor/bootstrap/css/bootstrap-reboot.css
+ create mode 100755 vendor/bootstrap/css/bootstrap-reboot.css.map
+ create mode 100755 vendor/bootstrap/css/bootstrap-reboot.min.css
+ create mode 100755 vendor/bootstrap/css/bootstrap-reboot.min.css.map
+ create mode 100755 vendor/bootstrap/css/bootstrap.css
+ create mode 100755 vendor/bootstrap/css/bootstrap.css.map
+ create mode 100755 vendor/bootstrap/css/bootstrap.min.css
+ create mode 100755 vendor/bootstrap/css/bootstrap.min.css.map
+ create mode 100755 vendor/bootstrap/js/bootstrap.bundle.js
+ create mode 100755 vendor/bootstrap/js/bootstrap.bundle.js.map
+ create mode 100755 vendor/bootstrap/js/bootstrap.bundle.min.js
+ create mode 100755 vendor/bootstrap/js/bootstrap.bundle.min.js.map
+ create mode 100755 vendor/bootstrap/js/bootstrap.js
+ create mode 100755 vendor/bootstrap/js/bootstrap.js.map
+ create mode 100755 vendor/bootstrap/js/bootstrap.min.js
+ create mode 100755 vendor/bootstrap/js/bootstrap.min.js.map
+ create mode 100755 vendor/jquery/jquery.js
+ create mode 100755 vendor/jquery/jquery.min.js
+ create mode 100755 vendor/jquery/jquery.min.map
+ create mode 100755 vendor/jquery/jquery.slim.js
+ create mode 100755 vendor/jquery/jquery.slim.min.js
+ create mode 100755 vendor/jquery/jquery.slim.min.map
+ss-iMac:homepage s$ git push
+Username for 'https://github.com': FG123Z
+Password for 'https://FG123Z@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/FG123Z/homepage/'
+ss-iMac:homepage s$ git push
+Username for 'https://github.com': FG123Z
+Password for 'https://FG123Z@github.com': 
+Counting objects: 122, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (117/117), done.
+Writing objects: 100% (122/122), 1.47 MiB | 1.57 MiB/s, done.
+Total 122 (delta 24), reused 0 (delta 0)
+remote: Resolving deltas: 100% (24/24), done.
+To https://github.com/FG123Z/homepage
+   6f65539..e2a470d  main -> main
+ss-iMac:homepage s$ git branch ssg-bash
+ss-iMac:homepage s$ git branch
+* main
+  ssg-bash
+ss-iMac:homepage s$ mkdir templates
+ss-iMac:homepage s$ mkdir docs
+ss-iMac:homepage s$ cd docs
+ss-iMac:docs s$ cd templates
+-bash: cd: templates: No such file or directory
+ss-iMac:docs s$ cd templates
+-bash: cd: templates: No such file or directory
+ss-iMac:docs s$ cd templates
+-bash: cd: templates: No such file or directory
+ss-iMac:docs s$ cd homepage
+-bash: cd: homepage: No such file or directory
+ss-iMac:docs s$ cd templates
+-bash: cd: templates: No such file or directory
+ss-iMac:docs s$ ls
+ss-iMac:docs s$ cd templates
+-bash: cd: templates: No such file or directory
+ss-iMac:docs s$ ls -a
+.	..
+ss-iMac:docs s$ cd docs
+-bash: cd: docs: No such file or directory
+ss-iMac:docs s$ ls
+ss-iMac:docs s$ cd templates
+-bash: cd: templates: No such file or directory
+ss-iMac:docs s$ cd ..
+ss-iMac:homepage s$ mkdir templates
+mkdir: templates: File exists
+ss-iMac:homepage s$ cd templates
+ss-iMac:templates s$ cd homepage
+-bash: cd: homepage: No such file or directory
+ss-iMac:templates s$ cd ..
+ss-iMac:homepage s$ ls
+LICENSE			docs			package.json
+README.md		formpage.html		projects.html
+blog.html		gulpfile.js		templates
+circle-cropped (4).png	html-email-contact-form	vendor
+contact.html		index.html
+css			package-lock.json
+ss-iMac:homepage s$ cd templates
+ss-iMac:templates s$ git init
+Initialized empty Git repository in /Users/s/homepage/templates/.git/
+ss-iMac:templates s$ cd ..
+ss-iMac:homepage s$ cd docs
+ss-iMac:docs s$ git init
+Initialized empty Git repository in /Users/s/homepage/docs/.git/
+ss-iMac:docs s$ la -a
+-bash: la: command not found
+ss-iMac:docs s$ cd ..
+ss-iMac:homepage s$ ls -a
+.			contact.html		package-lock.json
+..			css			package.json
+.git			docs			projects.html
+LICENSE			formpage.html		templates
+README.md		gulpfile.js		vendor
+blog.html		html-email-contact-form
+circle-cropped (4).png	index.html
+ss-iMac:homepage s$ 

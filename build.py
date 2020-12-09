@@ -15,10 +15,10 @@ print('combining HTML')
 combined_html = top_html + middle_html + bottom_html
 print(combined_html)
 
-
-
 #writes the new index.html file to a brand new file in the same directory
-open('docs/blog.html', 'w+').write(combined_html)
+open('docs/index.html', 'w+').write(combined_html)
+
+
 
 print('Building our static site')
 
@@ -37,10 +37,10 @@ print('combining HTML')
 combined_html = top_html + middle_html + bottom_html
 print(combined_html)
 
-
-
 #writes the new index.html file to a brand new file in the same directory
-open('docs/contact.html', 'w+').write(combined_html)
+open('docs/blog.html', 'w+').write(combined_html)
+
+
 
 print('Building our static site')
 
@@ -59,10 +59,11 @@ print('combining HTML')
 combined_html = top_html + middle_html + bottom_html
 print(combined_html)
 
-
-
 #writes the new index.html file to a brand new file in the same directory
-open('docs/projects.html', 'w+').write(combined_html)
+open('docs/contact.html', 'w+').write(combined_html)
+
+
+
 
 print('Building our static site')
 
@@ -80,8 +81,6 @@ middle_html = open('./content/projects.html').read()
 print('combining HTML')
 combined_html = top_html + middle_html + bottom_html
 print(combined_html)
-
-
 
 #writes the new index.html file to a brand new file in the same directory
 open('docs/projects.html', 'w+').write(combined_html)

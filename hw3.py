@@ -48,47 +48,21 @@ def main():
             index_content = open(page_filename).read()
             #Use the string replace
             finished_index_page = template.replace("{{content}}", index_content)
-            open(page_output, "w+").write(finished_index_page)
 
-            
+            finished_index_page = finished_index_page.replace("{{title}}", page_title)
+            write_output_file(page_output, finished_index_page)
+
+def write_output_file(filename, content):
+    open(filename, 'w+').write(content)     
 main ()
 
-    # def apply_template (content):
-    #   :Read in template, do string replacing, and return result
-#     return results
 
-#     def main():
-#         content = open('docs/index.html').read()
-#         resulting_html_for_index = apply_template (content)
 
-#         def main():
-#         content = open('docs/blog.html').read()
-#         resulting_html_for_blog = apply_template (content)
+#def write_output_file(title, content):
+ #       return results title + ", " + content
+    
+#def write_output_file(output, content):
+ #       return results output + ", " + content
 
-#         def main():
-#         content = open('docs/contact.html').read()
-#         resulting_html_for_contact = apply_template (content)
-
-#         def main():
-#         content = open('docs/projects.html').read()
-#         resulting_html_for_projects = apply_template (content)
-
-#         user_information_template = Template('''
-#             <p>filename: {{ title }}</p>
-#             <p>index: {{ content }}</p>
-#             ''')
-
-# result = user_information_template.render(
-#     filename='content',
-#     output='docs',
-#     title='Mt blog',
-# )
-# print(result)
-
-# # Read in the entire template
-#             template = open("templates/base.html").read()
-#         # Read in the content of the index HTML page
-#             index_content = open(page_filename).read()
-#             #Use the string replace
-#             finished_index_page = template.replace("{{title}}", index_content)
-#             open(page_output, "w+").write(finished_index_page)
+def main():
+    content = open 

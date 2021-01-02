@@ -43,7 +43,8 @@ def main():
         
     
         # Read in the entire template
-            template = open("templates/base.html").read()
+            #template = open("templates/base.html").read()
+            template = reading_the_template()
         # Read in the content of the index HTML page
             index_content = open(page_filename).read()
             #Use the string replace
@@ -52,17 +53,27 @@ def main():
             finished_index_page = finished_index_page.replace("{{title}}", page_title)
             write_output_file(page_output, finished_index_page)
 
+def reading_the_template():
+    template = open("templates/base.html").read()
+    return template
+
+def reading_content_of_index_HTML():    
+            index_content = open(page_filename).read()
+            return page_filename
+
+
 def write_output_file(filename, content):
     open(filename, 'w+').write(content)     
-main ()
 
 
 
 #def write_output_file(title, content):
- #       return results title + ", " + content
+#        return results title + ", " + content
     
 #def write_output_file(output, content):
- #       return results output + ", " + content
+#       return results output + ", " + content
 
-def main():
-    content = open 
+#def main():
+#    content = open 
+
+main ()
